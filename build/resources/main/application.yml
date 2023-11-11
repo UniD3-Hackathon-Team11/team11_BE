@@ -2,5 +2,12 @@ spring:
   sql:
     init:
       mode: always
+
   jpa:
     defer-datasource-initialization: true
+
+  thymeleaf:
+    cache: false
+    check-template-location: true
+    prefix: classpath:/templates/
+    suffix: .html
