@@ -3,6 +3,7 @@ package com.team11.be.domain.game.controller;
 import com.team11.be.domain.game.dto.GameRequestDto;
 import com.team11.be.domain.game.dto.GameResponseDto;
 import com.team11.be.domain.game.service.GameService;
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -17,7 +18,7 @@ public class GameController {
     private final GameService gameService;
 
     @PostMapping("/games")
-    public void postGame(GameRequestDto gameRequestDto){
+    public void postGame(@Valid GameRequestDto gameRequestDto){
         gameService.postGame(gameRequestDto);
     }
 
