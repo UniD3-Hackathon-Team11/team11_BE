@@ -10,8 +10,6 @@ public class CorsConfig implements WebMvcConfigurer {
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
                 .allowedOrigins("*")
-                .allowedMethods("*")
-                .allowCredentials(true) // 쿠키 정책 허용
-                .maxAge(3600);
+                .allowedMethods("*");
     }
 }

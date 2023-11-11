@@ -7,7 +7,7 @@ services: 	#service들 정의
     restart: always		#컨테이너 재실행
     ports:
       - 8080:8080
-    container_name: app_test01
+    container_name: app
 #    environment:	#환경 설정(database연결 및 profile 지정)
 #      SPRING_DATASOURCE_URL: jdbc:mysql://database:3306/starbucks_db_test?useSSL=false&serverTimezone=UTC&useLegacyDatetimeCode=false&allowPublicKeyRetrieval=true
 #      SPRING_DATASOURCE_USERNAME: root
