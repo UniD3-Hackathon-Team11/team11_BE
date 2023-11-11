@@ -1,0 +1,11 @@
+POST http://localhost:8080/games
+Content-Type: application/json
+
+{
+  "school" : "초등학교",
+  "grade" : 1, "classNumber" : 12, "memberNumber" : 1,
+  "name" : "초등학생", "score" : 5
+}
+
+###
+GET http://localhost:8080/games

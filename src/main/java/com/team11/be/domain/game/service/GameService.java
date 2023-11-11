@@ -9,11 +9,13 @@ import com.team11.be.domain.member.model.Member;
 import com.team11.be.domain.member.repository.MemberRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
 @Service
 @RequiredArgsConstructor
+@Transactional
 public class GameService {
 
     private final GameRepository gameRepository;
