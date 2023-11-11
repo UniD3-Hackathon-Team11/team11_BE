@@ -7,6 +7,7 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -20,7 +21,7 @@ public class GameController {
 
     @Tag(name = "게임 정보 제출", description = "게임을 마치고 게임 정보와 유저 정보를 제출합니다")
     @PostMapping("/games")
-    public void postGame(@Valid GameRequestDto gameRequestDto){
+    public void postGame(@Valid @ModelAttribute GameRequestDto gameRequestDto){
         gameService.postGame(gameRequestDto);
     }
 

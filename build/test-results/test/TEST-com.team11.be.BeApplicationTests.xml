@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.team11.be.BeApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-11-11T13:43:03" hostname="Kyunghunui-MacBookAir.local" time="0.274">
+<testsuite name="com.team11.be.BeApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-11-11T13:48:34" hostname="Kyunghunui-MacBookAir.local" time="0.28">
   <properties/>
-  <testcase name="contextLoads()" classname="com.team11.be.BeApplicationTests" time="0.274"/>
-  <system-out><![CDATA[22:43:01.848 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.team11.be.BeApplicationTests]: BeApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-22:43:01.892 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.team11.be.BeApplication for test class com.team11.be.BeApplicationTests
+  <testcase name="contextLoads()" classname="com.team11.be.BeApplicationTests" time="0.28"/>
+  <system-out><![CDATA[22:48:32.489 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.team11.be.BeApplicationTests]: BeApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+22:48:32.533 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.team11.be.BeApplication for test class com.team11.be.BeApplicationTests
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -13,21 +13,21 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.1.5)
 
-2023-11-11T22:43:02.072+09:00  INFO 12506 --- [    Test worker] com.team11.be.BeApplicationTests         : Starting BeApplicationTests using Java 17.0.6 with PID 12506 (started by kyunghunkim in /Users/kyunghunkim/devcourse/be)
-2023-11-11T22:43:02.072+09:00  INFO 12506 --- [    Test worker] com.team11.be.BeApplicationTests         : No active profile set, falling back to 1 default profile: "default"
-2023-11-11T22:43:02.493+09:00  INFO 12506 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-11-11T22:43:02.519+09:00  INFO 12506 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 2 JPA repository interfaces.
-2023-11-11T22:43:02.685+09:00  INFO 12506 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-11-11T22:43:02.779+09:00  INFO 12506 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:648067b9-0e7c-4c10-bc3c-50d6f9883d9d user=SA
-2023-11-11T22:43:02.780+09:00  INFO 12506 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-11-11T22:43:02.800+09:00  INFO 12506 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-11-11T22:43:02.821+09:00  INFO 12506 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
-2023-11-11T22:43:02.822+09:00  INFO 12506 --- [    Test worker] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
-2023-11-11T22:43:02.929+09:00  INFO 12506 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2023-11-11T22:43:03.318+09:00  INFO 12506 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2023-11-11T22:43:03.338+09:00  INFO 12506 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-11-11T22:43:03.545+09:00  WARN 12506 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-11-11T22:43:03.773+09:00  INFO 12506 --- [    Test worker] com.team11.be.BeApplicationTests         : Started BeApplicationTests in 1.806 seconds (process running for 2.415)
+2023-11-11T22:48:32.708+09:00  INFO 12616 --- [    Test worker] com.team11.be.BeApplicationTests         : Starting BeApplicationTests using Java 17.0.6 with PID 12616 (started by kyunghunkim in /Users/kyunghunkim/devcourse/be)
+2023-11-11T22:48:32.708+09:00  INFO 12616 --- [    Test worker] com.team11.be.BeApplicationTests         : No active profile set, falling back to 1 default profile: "default"
+2023-11-11T22:48:33.120+09:00  INFO 12616 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-11T22:48:33.143+09:00  INFO 12616 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 2 JPA repository interfaces.
+2023-11-11T22:48:33.315+09:00  INFO 12616 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-11-11T22:48:33.411+09:00  INFO 12616 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:997e9e1c-ecfb-41b0-8fa0-26ed95425813 user=SA
+2023-11-11T22:48:33.412+09:00  INFO 12616 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-11-11T22:48:33.432+09:00  INFO 12616 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-11-11T22:48:33.453+09:00  INFO 12616 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
+2023-11-11T22:48:33.455+09:00  INFO 12616 --- [    Test worker] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-11-11T22:48:33.568+09:00  INFO 12616 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-11-11T22:48:33.964+09:00  INFO 12616 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-11-11T22:48:33.983+09:00  INFO 12616 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-11T22:48:34.208+09:00  WARN 12616 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-11T22:48:34.426+09:00  INFO 12616 --- [    Test worker] com.team11.be.BeApplicationTests         : Started BeApplicationTests in 1.818 seconds (process running for 2.562)
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
