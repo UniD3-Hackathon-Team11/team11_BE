@@ -40,7 +40,7 @@ public class GameService {
     public List<GameResponseDto> getGameInfoList(Long stageId){
         Stage stage = stageService.getStage(stageId);
 
-        List<Game> games = gameRepository.getGamesByStage(stage);
+        List<Game> games = gameRepository.getGamesByStageOrderByScoreDesc(stage);
         return games.stream().map(g -> {
             Member member = g.getMember();
             return new GameResponseDto(g.getId(), g.getScore(), member.getSchool(),
