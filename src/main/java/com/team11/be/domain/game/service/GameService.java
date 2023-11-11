@@ -4,7 +4,6 @@ import com.team11.be.domain.game.dto.GameRequestDto;
 import com.team11.be.domain.game.dto.GameResponseDto;
 import com.team11.be.domain.game.model.Game;
 import com.team11.be.domain.game.repository.GameRepository;
-import com.team11.be.domain.member.dto.MemberResponseDto;
 import com.team11.be.domain.member.model.Member;
 import com.team11.be.domain.member.repository.MemberRepository;
 import lombok.RequiredArgsConstructor;
@@ -35,9 +34,8 @@ public class GameService {
         List<Game> games = gameRepository.findAll();
         return games.stream().map(g -> {
             Member member = g.getMember();
-            MemberResponseDto memberResponseDto = new MemberResponseDto(member.getId(), member.getSchool(),
+            return new GameResponseDto(g.getId(), g.getScore(), member.getSchool(),
                     member.getGrade(), member.getClassNumber(), member.getMemberNumber(), member.getName());
-            return new GameResponseDto(g.getId(), g.getScore(), memberResponseDto);
         }).toList();
     }
 }
