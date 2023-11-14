@@ -1,4 +1,4 @@
-POST http://localhost:8080/games/999?school=%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90&grade=1&classNumber=12&memberNumber=1&name=%EC%B4%88%EB%93%B1%ED%95%99%EC%83%9D&score=5
+POST http://15.164.162.220:8080/games/999?school=%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90&grade=1&classNumber=12&memberNumber=1&name=훈이&score=6
 
 ###
 GET http://localhost:8080/games/999
