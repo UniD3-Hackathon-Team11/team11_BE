@@ -14,6 +14,7 @@
         <th>게임 아이디</th>
         <th>목표 점수</th>
         <th>제한 시간</th>
+        <th>입장 코드</th>
         <th>삭제</th>
     </tr>
     </thead>
@@ -22,6 +23,9 @@
         <td th:text="${stage.id}"></td>
         <td th:text="${stage.targetScore()}"></td>
         <td th:text="${stage.targetLimit()}"></td>
+        <td>
+            <a th:href="@{/backoffice/stages/getQrcode/{id} (id=${stage.id})}" class="btn btn-success">QR 코드</a>
+        </td>
         <td>
             <a th:href="@{/backoffice/stages/{id}/delete (id=${stage.id})}" class="btn btn-danger">삭제</a>
         </td>
